@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import HomeScreen from './Screens/HomeScreen.jsx'
-import WorkspaceScreen from './Screens/WorkspaceScreen.jsx'
-import NewScreen from './Screens/NewScreen.jsx'
+import HomeScreen from './Screens/HomeScreen/HomeScreen.jsx'
+import WorkspaceScreen from './Screens/WorkspaceScreen/WorkspaceScreen.jsx'
+import NewScreen from './Screens/NewScreen/NewScreen.jsx'
 
 function App() {
     return (

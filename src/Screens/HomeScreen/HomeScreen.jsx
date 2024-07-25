@@ -1,5 +1,5 @@
 import React from 'react'
-import { HomeList } from '../Components/index.js'
+import { HomeList } from '../../Components/index.js'
 
 export const HomeScreen = () => {
     return (

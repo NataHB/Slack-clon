@@ -1,5 +1,5 @@
 import React from 'react'
-import { NewForm } from '../Components/New/NewForm/NewForm'
+import { NewForm } from '../../Components/New/NewForm/NewForm'
 import { Link } from 'react-router-dom'
 
 export const NewScreen = () => {

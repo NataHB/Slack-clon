@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { ChatForm, ChatHeader, ChatList } from '../Components'
+import { ChatForm, ChatHeader, ChatList } from '../../Components'
 import './CanalScreen.css'
 
 export const CanalScreen = ({canals, indexWorkspace}) => {

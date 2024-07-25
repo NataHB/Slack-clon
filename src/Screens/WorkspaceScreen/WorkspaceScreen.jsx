@@ -1,10 +1,10 @@
 import React from 'react'
 import { useParams, NavLink } from 'react-router-dom'
-import { traerLS } from '../Data/localStorage'
+import { traerLS } from '../../Data/localStorage.js'
 import { useEffect, useState } from 'react'
-import { WorkspaceNav } from '../Components'
-import { CanalScreen } from './CanalScreen'
-import { CanalList } from '../Components/index.js'
+import { WorkspaceNav } from '../../Components/index.js'
+import { CanalScreen } from '../CanalScreen/CanalScreen.jsx'
+import { CanalList } from '../../Components/index.js'
 import './WorkspaceScreen.css'
 
 
