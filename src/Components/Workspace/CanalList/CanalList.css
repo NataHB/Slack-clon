@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+    .CanalList {
+        display: inline-block;
+        position: absolute;
+        width: 300px;
+        background-color: #f0f0f0;
+        top: 70px;
+        left: 0;
+        bottom: 0;
+
+    }
+
+    .toggle-canals-btn {
+        display: none;
+    }
+
+
+/* Canales ocultos en pantallas pequeñas */
+@media (max-width: 767px) {
+    .CanalList {
+        display: none;
+    }
+
+    .CanalList.show {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #f0f0f0;
+        top: 70px;
+        z-index: 5;
+    }
+
+    .toggle-canals-btn {
+        display: block;
+    }
+}

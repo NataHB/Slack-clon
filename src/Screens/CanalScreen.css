@@ -1,0 +1,17 @@
+.CanalScreen{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 300px;
+    bottom: 0;
+    width: auto;
+    background-color: #979797;
+}
+
+
+@media (max-width: 767px) {
+    .CanalScreen{
+        width: 100%;
+        left: 0;
+    }
+}   

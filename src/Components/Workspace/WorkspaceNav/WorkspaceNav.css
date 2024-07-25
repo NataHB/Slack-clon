@@ -1,0 +1,14 @@
+.WorkspaceNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background-color: #dcdcdc;
+}
+
+.WorkspaceNav-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
