@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { addCanalLocalStorage } from '../../../Data/localStorage'
+import './CanalForm.css'
 
 export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
 
@@ -8,13 +9,16 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (canal === '') {
+            return
+        }
         addCanal(canal)
         setCanal('')
     }
 
     const addCanal = (newCanal) => {
         const newCanalObject = {
-                title: newCanal,
+                title: '# '+newCanal,
                 messages: [
                     {
                         thumbnail: '',
@@ -33,14 +37,14 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
 
 
     return (
-            <form onSubmit={handleSubmit}>
+            <form className="CanalForm" onSubmit={handleSubmit}>
                 <input 
                 type="text" 
                 placeholder="Canal" 
                 value={canal} 
                 onChange={(e) => setCanal(e.target.value)}
                 />
-                <button type="submit">Crear</button>
+                <button type="submit">+</button>
             </form>
     )
 }

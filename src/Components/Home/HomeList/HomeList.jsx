@@ -1,7 +1,6 @@
 import React from 'react'
 import { setLS, traerLS } from '../../../Data/localStorage'
 import HomeItem from './HomeItem/HomeItem'
-import HomeButton from '../HomeButton/HomeButton'
 
 export const HomeList = () => {
 
@@ -19,7 +18,6 @@ export const HomeList = () => {
                             )
                         })
                     }
-                    <HomeButton />
         </>
     )
 }

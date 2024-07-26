@@ -1,0 +1,51 @@
+.HomeScreen{
+    padding: 5% 20%;
+}
+
+.HomeScreen-header{
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.HomeScreen-main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.HomeList-section{
+    background-color:var(--color-terciario);
+    padding: 20px 5px 5px 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.HomeList{
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow-y: scroll;
+}
+
+.HomeList::-webkit-scrollbar {
+    display: none;
+}
+
+.HomeButton-section{
+    background-color:var(--color-terciario);
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 767px) {
+    .HomeScreen{
+        padding: 5% 10%;
+    }
+}   

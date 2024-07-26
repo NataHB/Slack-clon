@@ -1,0 +1,21 @@
+
+.NewScreen-header{
+    padding: 40px 0 0 8%;
+    
+}
+
+.NewScreen-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5% 8%;
+}
+
+.NewScreen-main h1{
+    font-size: 50px;
+    max-width: 500px;
+}
+
+.NewScreen-main p{
+    max-width: 500px;
+}

@@ -1,0 +1,16 @@
+.HomeButton{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--color-primario);
+    flex-wrap: wrap;
+}
+
+.HomeButton-btn{
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secundario);
+}

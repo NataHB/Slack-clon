@@ -2,6 +2,7 @@ import React from 'react'
 import { traerLS, addWorkspaceLocalStorage } from '../../../Data/localStorage'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import './NewForm.css'
 
 export const NewForm = () => {
 
@@ -11,21 +12,27 @@ export const NewForm = () => {
     const [allWorkspaces, setAllWorkspaces] = useState(workspaces)
     const [newWorkspace, setNewWorkspace] = useState([])
     const [newCanal, setNewCanal] = useState([])
+    const [errorMessage, setErrorMessage] = useState('')
 
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        setErrorMessage('')
         if (newWorkspace == '' || newCanal == '') {
-            return alert('Por favor rellene todos los campos')
+            setErrorMessage('Debes rellenar ambos campos')
+            return
         }
         if (allWorkspaces.find((workspace) => workspace.title == newWorkspace)) {
-            return alert('Ya existe un Workspace con ese nombre')
+            setErrorMessage('El Workspace ya existe')
+            return 
         }
         if (allWorkspaces.find((workspace) => workspace.canals.find((canal) => canal.title == newCanal))) {
-            return alert('Ya existe un Canal con ese nombre')
+            setErrorMessage('El Canal ya existe')
+            return
         }
         if (newWorkspace.length > 9 || newCanal.length > 9) {
-            return alert('El Workspace o Canal no puede tener mas de 9 caracteres')
+            setErrorMessage('Los campos no pueden superar los 9 caracteres')
+            return 
             
         }
         addWorkspace(newWorkspace, newCanal)
@@ -36,7 +43,7 @@ export const NewForm = () => {
     const addWorkspace = (newWS, newCL ) => {
         const newWorkspaceObject = {
             title: newWS,
-            thumbnail: '',
+            thumbnail: 'https://a.slack-edge.com/80588/img/avatars-teams/ava_0010-88.png',
             canals: [
                 {
                     title: newCL,
@@ -63,10 +70,8 @@ export const NewForm = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Workspace:
-                </label>
+            <form className='NewForm' onSubmit={handleSubmit}>
+                {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
                 <input 
                     type="text" 
                     placeholder="Workspace" 
@@ -74,19 +79,19 @@ export const NewForm = () => {
                     onChange={(e) => setNewWorkspace(e.target.value)}
                     />
 
-                <label>
-                    Canal:
-                </label>
                 <input 
                     type="text" 
                     placeholder="Canal" 
                     value={newCanal} 
                     onChange={(e) => setNewCanal(e.target.value)}
                     />
+
+                <div className='form-btns'>
                 <button type="submit">Crear</button>
                 <Link to={'/'}>
                 <button>Cancelar</button>
                 </Link>
+                </div>
             </form>
             
         </>       

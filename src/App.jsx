@@ -4,6 +4,8 @@ import HomeScreen from './Screens/HomeScreen/HomeScreen.jsx'
 import WorkspaceScreen from './Screens/WorkspaceScreen/WorkspaceScreen.jsx'
 import NewScreen from './Screens/NewScreen/NewScreen.jsx'
 
+import './App.css'
+
 function App() {
     return (
         <Routes>

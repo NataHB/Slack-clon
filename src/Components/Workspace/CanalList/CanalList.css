@@ -1,25 +1,57 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
     .CanalList {
         display: inline-block;
         position: absolute;
         width: 300px;
-        background-color: #f0f0f0;
-        top: 70px;
+        background-color: var(--color-primario);
+        top: 50px;
         left: 0;
         bottom: 0;
+        padding: 15px 20px;
+    }
 
+    .CanalList-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .CanalList-ul li {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        color: var(--color-contraste);
+    }
+
+    .CanalList-ul li:hover {
+        color: var(--color-secundario);
+    }
+    .CrearCanal-btn {
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .CancelarCanal-btn {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-terciario);
+    color: white;
+    cursor: pointer;
     }
 
     .toggle-canals-btn {
         display: none;
     }
 
+    .buttons-container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
 
 /* Canales ocultos en pantallas pequeñas */
 @media (max-width: 767px) {
@@ -31,9 +63,11 @@
         display: block;
         position: absolute;
         width: 100%;
-        height: 100vh;
-        background-color: #f0f0f0;
-        top: 70px;
+        height: fit-content;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: var(--color-primario);
+        top: 50px;
         z-index: 5;
     }
 

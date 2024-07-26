@@ -15,8 +15,8 @@ export const CanalList = ({ showCanals, canals, allCanals, setAllCanals, indexWo
 
     return (
         <nav className={`CanalList ${showCanals ? 'show' : ''}`}>
-            <h2>Canales</h2>
-            <ul>
+            <ul className='CanalList-ul'>
+                <h3>Canales</h3>
                 {
                     canals.map((canal, index) => {
                         const { title, id_canal } = canal
@@ -28,18 +28,18 @@ export const CanalList = ({ showCanals, canals, allCanals, setAllCanals, indexWo
                     })
                 }
                 {!showForm && (
-                <button onClick={handleForm}>
-                    Crear Canal
+                <button className ='CrearCanal-btn' onClick={handleForm}>
+                    + Añadir canal
                 </button>
                 )}
                 {showForm && (
                     <>
                         <CanalForm allCanals={allCanals} setAllCanals={setAllCanals} indexWorkspace={indexWorkspace} />
-                        <button onClick={handleForm}>
-                            Cancelar
-                        </button>
+                        <button className='CancelarCanal-btn' onClick={handleForm}>Cancelar</button>
                     </>
                 )}
+                
+    
             </ul>
         </nav>
     )

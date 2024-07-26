@@ -1,0 +1,26 @@
+.CanalForm {
+    border: var(--color-contraste) 1px solid;
+    border-radius: 10px;
+    background-color: var(--color-blanco);
+    padding: 3px;
+}
+
+.CanalForm input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-contraste);
+}
+
+.CanalForm button {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: var(--color-blanco);
+}
+
+.CanalForm input::placeholder {
+    color: var(--color-contraste);
+}

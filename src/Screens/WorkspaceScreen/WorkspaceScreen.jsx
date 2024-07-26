@@ -44,7 +44,7 @@ export const WorkspaceScreen = () => {
         <WorkspaceNav 
             handleDisplayCanals={handleDisplayCanals} 
             title={title} 
-            valueCanalList={showCanals ? 'Cerrar Canales' : 'Ver Canales'}
+            valueCanalList={showCanals ? 'Cerrar' : 'Canales'}
         />
         <CanalList 
             title={title} 

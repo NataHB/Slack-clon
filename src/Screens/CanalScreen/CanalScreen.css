@@ -1,13 +1,27 @@
 .CanalScreen{
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 0;
     left: 300px;
     bottom: 0;
     width: auto;
-    background-color: #979797;
+    background-color: var(--color-secundario);
 }
 
+.CanalScreen main{
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.CanalScreen main::-webkit-scrollbar{
+    display: none;
+}
+
+.CanalScreen footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 @media (max-width: 767px) {
     .CanalScreen{

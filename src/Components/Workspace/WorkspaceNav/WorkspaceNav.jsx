@@ -5,9 +5,7 @@ import './WorkspaceNav.css'
 export const WorkspaceNav = ({handleDisplayCanals, valueCanalList, title}) => {
     return (
         <header className='WorkspaceNav'>
-            <div>
-                <h1>{title}</h1>
-            </div>
+            <h1>{title}</h1>
             <div className='WorkspaceNav-btns'>
                 <NavLink to={'/'}>
                     <button>Salir</button>

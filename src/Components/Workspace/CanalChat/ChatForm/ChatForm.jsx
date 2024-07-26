@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { addMessageLocalStorage } from '../../../../Data/localStorage';
+import './ChatForm.css'
 
 export const ChatForm = ({ indexWorkspace, indexCanal, allMessages, setAllMessages }) => {
     
@@ -7,6 +8,9 @@ export const ChatForm = ({ indexWorkspace, indexCanal, allMessages, setAllMessag
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (message === '') {
+            return
+        }
         addMessage(message)
         setMessage('')
     }
@@ -25,14 +29,14 @@ export const ChatForm = ({ indexWorkspace, indexCanal, allMessages, setAllMessag
     }
 
     return (
-        <form onSubmit={handleSubmit}> 
+        <form className="ChatForm" onSubmit={handleSubmit}> 
             <input 
                 type="text" 
                 placeholder="Escribe tu mensaje" 
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             />
-            <button type="submit">Enviar</button>
+            <button type="submit">En</button>
         </form>
     )
 }

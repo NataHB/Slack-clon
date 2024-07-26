@@ -1,0 +1,31 @@
+.HomeItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--color-primario);
+    border-bottom: #9d9d9d 1px solid;
+    flex-wrap: wrap;
+}
+
+.HomeItem-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    word-wrap: break-word;
+}
+
+.HomeItem-info img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.HomeItem-btn{
+    padding: 10px;
+    background-color: var(--color-secundario);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}

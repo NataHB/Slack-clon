@@ -26,13 +26,15 @@ export const CanalScreen = ({canals, indexWorkspace}) => {
 
 
     return (
-        <main className='CanalScreen'>
+        <div className='CanalScreen'>
             <ChatHeader title={title} />
-            <ChatList allMessages={allMessages} />
+            <main>
+                <ChatList allMessages={allMessages} />
+            </main>
             <footer>
-            <ChatForm indexWorkspace={indexWorkspace} indexCanal={indexCanal} allMessages={allMessages} setAllMessages={setAllMessages}/>
+                <ChatForm indexWorkspace={indexWorkspace} indexCanal={indexCanal} allMessages={allMessages} setAllMessages={setAllMessages}/>
             </footer>
-        </main>
+        </div>
 
     )
 }

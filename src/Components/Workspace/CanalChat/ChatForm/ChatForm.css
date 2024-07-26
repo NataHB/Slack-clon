@@ -1,0 +1,22 @@
+.ChatForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--color-secundario);
+}
+
+.ChatForm input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.ChatForm button {
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--color-terciario);
+    color: white;
+}
