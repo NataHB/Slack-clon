@@ -1,13 +1,13 @@
 const WORKSPACES = [
     {
         title: 'Universo Pepes',
-        thumbnail: '../../../public/thumnail/thumnail_slack_verde.png',
+        thumbnail: '../../../public/thumnail_slack_verde.png',
         canals: [
             {
                 title: '# Las Pepas',
                 messages: [
                     {
-                        thumbnail: '../../../public/thumnail/pepa.jpg',
+                        thumbnail: '../../../public/pepa.jpg',
                         author: 'Pepa',
                         text: 'Bienvenidos a Slack!',
                         time: '19:57',
@@ -20,7 +20,7 @@ const WORKSPACES = [
                 title: '# Los Pepes',
                 messages: [
                     {
-                        thumbnail: '../../../public/thumnail/pepe.jpg',
+                        thumbnail: '../../../public/pepe.jpg',
                         author: 'Pepe',
                         text: 'Bienvenidos a Slack!',
                         time: '19:57',
@@ -34,13 +34,13 @@ const WORKSPACES = [
     },
     {
         title: 'Micheria',
-        thumbnail: '../../../public/thumnail/thumnail_slack_rojo.png',
+        thumbnail: '../../../public/thumnail_slack_rojo.png',
         canals: [
             {
                 title: '# Los Michos',
                 messages: [
                     {
-                        thumbnail: '../../../public/thumnail/micho.jpg',
+                        thumbnail: '../../../public/micho.jpg',
                         author: 'Micho',
                         text: 'Miau, Bienvenidos a Slack!',
                         time: '19:57',
@@ -53,7 +53,7 @@ const WORKSPACES = [
                 title: '# Las Michas',
                 messages: [
                     {
-                        thumbnail: '../../../public/thumnail/micha.jpg',
+                        thumbnail: '../../../public/micha.jpg',
                         author: 'Micha',
                         text: 'Miau, Bienvenidos a Slack!',
                         time: '19:57',
