@@ -46,7 +46,7 @@ export const NewForm = () => {
             thumbnail: '/thumnail_slack_verde.png',
             canals: [
                 {
-                    title: '# ' + newCL,
+                    title: newCL,
                     messages: [
                         {
                             thumbnail: '/slackbot.png',
