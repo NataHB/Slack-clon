@@ -22,7 +22,7 @@ export const CanalList = ({ showCanals, canals, allCanals, setAllCanals, indexWo
                         const { title, id_canal } = canal
                         return (
                             <NavLink key={index} to={`/workspace/${id}/${id_canal}`}>
-                                <li>{title}</li>
+                                <li> {'# '+ title} </li>
                             </NavLink>
                         )
                     })

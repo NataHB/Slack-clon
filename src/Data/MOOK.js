@@ -7,7 +7,7 @@ const WORKSPACES = [
                 title: 'Las Pepas',
                 messages: [
                     {
-                        thumbnail: '/thumnail_slack_rojo.png',
+                        thumbnail: '/pepa.jpg',
                         author: 'Pepa',
                         text: 'Bienvenidos a Slack!',
                         time: '19:57',
@@ -20,7 +20,7 @@ const WORKSPACES = [
                 title: 'Los Pepes',
                 messages: [
                     {
-                        thumbnail: '',
+                        thumbnail: '/pepe.jpg',
                         author: 'Pepe',
                         text: 'Bienvenidos a Slack!',
                         time: '19:57',
@@ -34,13 +34,13 @@ const WORKSPACES = [
     },
     {
         title: 'Micheria',
-        thumbnail: 'https://a.slack-edge.com/80588/img/avatars-teams/ava_0009-88.png',
+        thumbnail: '/thumnail_slack_rojo.png',
         canals: [
             {
                 title: 'Los Michos',
                 messages: [
                     {
-                        thumbnail: '',
+                        thumbnail: '/micho.jpg',
                         author: 'Micho',
                         text: 'Miau, Bienvenidos a Slack!',
                         time: '19:57',
@@ -53,7 +53,7 @@ const WORKSPACES = [
                 title: 'Las Michas',
                 messages: [
                     {
-                        thumbnail: '',
+                        thumbnail: '/micha.jpg',
                         author: 'Micha',
                         text: 'Miau, Bienvenidos a Slack!',
                         time: '19:57',

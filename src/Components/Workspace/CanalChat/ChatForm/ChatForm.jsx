@@ -18,7 +18,7 @@ export const ChatForm = ({ indexWorkspace, indexCanal, allMessages, setAllMessag
 
     const addMessage = (newMessage) => {
         const newMessageObject = {
-            thumbnail: '',
+            thumbnail: '/yo.jpg',
             author: 'Naty',
             text: newMessage,
             time: '19:57',

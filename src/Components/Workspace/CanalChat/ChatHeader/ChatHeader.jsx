@@ -4,7 +4,7 @@ import './ChatHeader.css'
 export const ChatHeader = ({ title }) => {
     return (
         <header className='ChatHeader'>
-            <h2>{title}</h2>
+            <h2>{'# '+ title}</h2>
         </header>
     )
 }

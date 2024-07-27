@@ -18,10 +18,10 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
 
     const addCanal = (newCanal) => {
         const newCanalObject = {
-                title: '# '+ newCanal,
+                title: newCanal,
                 messages: [
                     {
-                        thumbnail: '../../../public/thumnail/slackbot.png',
+                        thumbnail: '/slackbot.png',
                         author: 'Slack Bot',
                         text: 'Bienvenidos a Slack!',
                         time: '19:57',

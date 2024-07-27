@@ -43,13 +43,13 @@ export const NewForm = () => {
     const addWorkspace = (newWS, newCL ) => {
         const newWorkspaceObject = {
             title: newWS,
-            thumbnail: '../../../public/thumnail/thumnail_slack_verde.png',
+            thumbnail: '/thumnail_slack_verde.png',
             canals: [
                 {
                     title: '# ' + newCL,
                     messages: [
                         {
-                            thumbnail: '../../../public/thumnail/slackbot.png',
+                            thumbnail: '/slackbot.png',
                             author: 'Slack Bot',
                             text: 'Bienvenidos a Slack!',
                             time: '19:57',
