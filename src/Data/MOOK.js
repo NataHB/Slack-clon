@@ -1,13 +1,13 @@
 const WORKSPACES = [
     {
         title: 'Universo Pepes',
-        thumbnail: '../../../public/thumnail_slack_verde.png',
+        thumbnail: '/thumnail_slack_verde.png',
         canals: [
             {
-                title: '# Las Pepas',
+                title: 'Las Pepas',
                 messages: [
                     {
-                        thumbnail: '../../../public/pepa.jpg',
+                        thumbnail: '/thumnail_slack_rojo.png',
                         author: 'Pepa',
                         text: 'Bienvenidos a Slack!',
                         time: '19:57',
@@ -17,10 +17,10 @@ const WORKSPACES = [
                 id_canal: 1
             },
             {
-                title: '# Los Pepes',
+                title: 'Los Pepes',
                 messages: [
                     {
-                        thumbnail: '../../../public/pepe.jpg',
+                        thumbnail: '',
                         author: 'Pepe',
                         text: 'Bienvenidos a Slack!',
                         time: '19:57',
@@ -34,13 +34,13 @@ const WORKSPACES = [
     },
     {
         title: 'Micheria',
-        thumbnail: '../../../public/thumnail_slack_rojo.png',
+        thumbnail: 'https://a.slack-edge.com/80588/img/avatars-teams/ava_0009-88.png',
         canals: [
             {
-                title: '# Los Michos',
+                title: 'Los Michos',
                 messages: [
                     {
-                        thumbnail: '../../../public/micho.jpg',
+                        thumbnail: '',
                         author: 'Micho',
                         text: 'Miau, Bienvenidos a Slack!',
                         time: '19:57',
@@ -50,10 +50,10 @@ const WORKSPACES = [
                 id_canal: 1
             },
             {
-                title: '# Las Michas',
+                title: 'Las Michas',
                 messages: [
                     {
-                        thumbnail: '../../../public/micha.jpg',
+                        thumbnail: '',
                         author: 'Micha',
                         text: 'Miau, Bienvenidos a Slack!',
                         time: '19:57',
