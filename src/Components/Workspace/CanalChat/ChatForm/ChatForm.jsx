@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { addMessageLocalStorage } from '../../../../Data/localStorage';
+import { HiOutlinePaperAirplane } from "react-icons/hi";
 import './ChatForm.css'
 
 export const ChatForm = ({ indexWorkspace, indexCanal, allMessages, setAllMessages }) => {
@@ -36,7 +37,7 @@ export const ChatForm = ({ indexWorkspace, indexCanal, allMessages, setAllMessag
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             />
-            <button type="submit">En</button>
+            <button type="submit"><HiOutlinePaperAirplane style={{width: '17px' , height: '17px', color: 'var(--color-blanco)'}} /></button>
         </form>
     )
 }

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { WorkspaceNav } from '../../Components/index.js'
 import { CanalScreen } from '../CanalScreen/CanalScreen.jsx'
 import { CanalList } from '../../Components/index.js'
+import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
 import './WorkspaceScreen.css'
 
 
@@ -44,7 +45,11 @@ export const WorkspaceScreen = () => {
         <WorkspaceNav 
             handleDisplayCanals={handleDisplayCanals} 
             title={title} 
-            valueCanalList={showCanals ? 'Cerrar' : 'Canales'}
+            valueCanalList={showCanals 
+            ? 
+            <HiOutlineChevronUp style={{width: '24px' , height: '24px', color: 'var(--color-contraste)'}}/> 
+            : 
+            <HiOutlineChevronDown style={{width: '24px' , height: '24px', color: 'var(--color-contraste)'}}/>}
         />
         <CanalList 
             title={title} 

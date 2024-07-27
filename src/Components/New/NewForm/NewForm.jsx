@@ -30,8 +30,8 @@ export const NewForm = () => {
             setErrorMessage('El Canal ya existe')
             return
         }
-        if (newWorkspace.length > 9 || newCanal.length > 9) {
-            setErrorMessage('Los campos no pueden superar los 9 caracteres')
+        if (newWorkspace.length > 12 || newCanal.length > 12) {
+            setErrorMessage('Los campos no pueden superar los 12 caracteres')
             return 
             
         }
@@ -43,13 +43,13 @@ export const NewForm = () => {
     const addWorkspace = (newWS, newCL ) => {
         const newWorkspaceObject = {
             title: newWS,
-            thumbnail: 'https://a.slack-edge.com/80588/img/avatars-teams/ava_0010-88.png',
+            thumbnail: '../../../public/thumnail/thumnail_slack_verde.png',
             canals: [
                 {
-                    title: newCL,
+                    title: '# ' + newCL,
                     messages: [
                         {
-                            thumbnail: '',
+                            thumbnail: '../../../public/thumnail/slackbot.png',
                             author: 'Slack Bot',
                             text: 'Bienvenidos a Slack!',
                             time: '19:57',

@@ -13,4 +13,10 @@
     padding: 8px;
     border-radius: 5px;
     border: 2px solid var(--color-secundario);
+    color: var(--color-secundario);
+}
+
+.HomeButton-btn:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
 }

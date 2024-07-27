@@ -5,7 +5,7 @@
     gap: 20px;
     align-items: center;
     background-color: var(--color-primario);
-    border-bottom: #9d9d9d 1px solid;
+    border-bottom: var(--color-secundario) 1px solid;
     flex-wrap: wrap;
 }
 
@@ -25,7 +25,11 @@
 .HomeItem-btn{
     padding: 10px;
     background-color: var(--color-secundario);
-    color: white;
+    color: var(--color-blanco);
     border-radius: 5px;
     border: none;
+}
+
+.HomeItem-btn:hover{
+    background-color: var(--color-terciario);
 }

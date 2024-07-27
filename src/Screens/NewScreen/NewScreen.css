@@ -1,14 +1,13 @@
 
 .NewScreen-header{
-    padding: 40px 0 0 8%;
-    
+    padding: 5% 0 0 5%;
 }
 
 .NewScreen-main{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 5% 8%;
+    padding: 60px 8%;
 }
 
 .NewScreen-main h1{

@@ -45,10 +45,5 @@ const addWorkspaceLocalStorage = (workspace) => {
     localStorage.setItem('WORKSPACES', JSON.stringify(WORKSPACES))
 }
 
-const actualizarLS = () => {
-    const object_string = JSON.stringify(WORKSPACES)
 
-    localStorage.setItem('WORKSPACES', object_string)
-}
-
-export { setLS, traerLS, actualizarLS, addMessageLocalStorage, addCanalLocalStorage, addWorkspaceLocalStorage }
+export { setLS, traerLS, addMessageLocalStorage, addCanalLocalStorage, addWorkspaceLocalStorage }
