@@ -12,11 +12,13 @@
 .HomeButton-btn{
     padding: 8px;
     border-radius: 5px;
-    border: 2px solid var(--color-secundario);
-    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    border: 2px solid var(--color-button);
+    color: var(--color-button);
 }
 
 .HomeButton-btn:hover{
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
+    background-color: var(--color-button);
+    color: var(--color-primario);
+    font-weight: 450;
 }

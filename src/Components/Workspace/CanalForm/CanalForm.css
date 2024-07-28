@@ -1,7 +1,7 @@
 .CanalForm {
     border: var(--color-contraste) 1px solid;
     border-radius: 10px;
-    background-color: var(--color-blanco);
+    background-color: var(--color-secundario);
     padding: 3px;
 }
 
@@ -10,15 +10,17 @@
     outline: none;
     font-size: 16px;
     font-weight: 500;
-    color: var(--color-contraste);
+    padding: 0 3px;
+    background-color: var(--color-secundario);
 }
 
 .CanalForm button {
     border: none;
     font-size: 16px;
     font-weight: 500;
+    padding: 0 5px;
     cursor: pointer;
-    background-color: var(--color-blanco);
+    background-color: var(--color-secundario);
 }
 
 .CanalForm input::placeholder {

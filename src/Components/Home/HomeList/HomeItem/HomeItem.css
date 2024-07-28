@@ -24,12 +24,13 @@
 
 .HomeItem-btn{
     padding: 10px;
-    background-color: var(--color-secundario);
+    background-color: var(--color-terciario);
     color: var(--color-blanco);
     border-radius: 5px;
     border: none;
 }
 
 .HomeItem-btn:hover{
-    background-color: var(--color-terciario);
+    font-weight: 450;
+    background-color: var(--color-secundario);
 }

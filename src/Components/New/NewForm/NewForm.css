@@ -29,5 +29,6 @@
 }
 
 .form-btns button:hover{
+    font-weight: 450;
     background-color: var(--color-terciario);
 }

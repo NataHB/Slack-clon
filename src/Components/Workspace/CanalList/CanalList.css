@@ -7,6 +7,11 @@
         left: 0;
         bottom: 0;
         padding: 20px 20px;
+        overflow-y: scroll;
+    }
+
+    .CanalList::-webkit-scrollbar {
+        display: none;
     }
 
     .CanalList-ul {
@@ -29,22 +34,24 @@
     }
 
     .CanalList-ul li:hover {
-        color: var(--color-secundario);
+        font-weight: 700;
     }
     .CrearCanal-btn {
         border: none;
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
+        background-color: transparent;
     }
 
     .CancelarCanal-btn {
-    padding: 5px;
+    padding: 6px;
+    background: none;
     border-radius: 10px;
     border: none;
-    background-color: var(--color-terciario);
     color: white;
     cursor: pointer;
+    background-color: var(--color-terciario);
     }
 
     .toggle-canals-btn {
@@ -61,6 +68,7 @@
 @media (max-width: 767px) {
     .CanalList {
         display: none;
+        transition-duration: 0.5s;
     }
 
     .CanalList.show {
@@ -73,6 +81,7 @@
         background-color: var(--color-primario);
         top: 60px;
         z-index: 5;
+        transition: all 1.5s ease-in-out;
     }
 
     .toggle-canals-btn {

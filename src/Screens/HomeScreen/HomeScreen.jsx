@@ -1,11 +1,20 @@
 import React from 'react'
 import { HomeList } from '../../Components/index.js'
 import { HomeButton } from '../../Components/index.js'
+import { IoSunny, IoMoon } from "react-icons/io5";
 import './HomeScreen.css'
 
-export const HomeScreen = () => {
+export const HomeScreen = ({darkMode, toggleTheme}) => {
     return (
         <div className='HomeScreen'>
+        <button className={ 'dark-mode-btn' } onClick={toggleTheme}>
+            {darkMode 
+            ? 
+            <IoSunny  style={{width: '28px' , height: '28px', color: 'var(--color-contraste)'}}/> 
+            : 
+            <IoMoon style={{width: '25px' , height: '25px', color: 'var(--color-contraste)'}}/> 
+            }
+        </button>
         <header className='HomeScreen-header'>
             <h1>Bienvenidos a Slack!</h1>
         </header>
