@@ -1,16 +1,24 @@
 import React from 'react'
 import { useState } from 'react'
+import { HiOutlinePlusSm } from "react-icons/hi";
 import { addCanalLocalStorage } from '../../../Data/localStorage'
 import './CanalForm.css'
 
 export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
 
     const [canal, setCanal] = useState('')
+    const [errorMessage, setErrorMessage] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (canal === '') {
+        setErrorMessage('')
+        if ( canal == '' ) {
+            setErrorMessage('Debes rellenar el campo')
             return
+        }
+        if ( canal.length > 12 ) {
+            setErrorMessage('El campo no pueden superar los 12 caracteres')
+            return 
         }
         addCanal(canal)
         setCanal('')
@@ -37,6 +45,7 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
 
 
     return (
+        <>
             <form className="CanalForm" onSubmit={handleSubmit}>
                 <input 
                 type="text" 
@@ -44,8 +53,10 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
                 value={canal} 
                 onChange={(e) => setCanal(e.target.value)}
                 />
-                <button type="submit">+</button>
+                <button type="submit"><HiOutlinePlusSm style={{width: '20px' , height: '20px', color: 'var(--color-contraste)'}} /></button>
             </form>
+            {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
+        </>
     )
 }
 

@@ -6,7 +6,7 @@
         top: 60px;
         left: 0;
         bottom: 0;
-        padding: 20px 20px;
+        padding: 20px;
         overflow-y: scroll;
     }
 
@@ -22,8 +22,33 @@
         align-items: flex-start;
     }
 
-    .CanalList-ul h3 {
-        font-size: 20px;
+    .search-header{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-header h3 {
+        font-size: 19px;
+        padding-left: 4px; ;
+    }
+
+    .search-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .search-input {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+        width: 100%;
+        color: var(--color-contraste);
+        background-color: var(--color-terciario);
     }
 
     .CanalList-ul li {
@@ -68,7 +93,6 @@
 @media (max-width: 767px) {
     .CanalList {
         display: none;
-        transition-duration: 0.5s;
     }
 
     .CanalList.show {
@@ -81,7 +105,7 @@
         background-color: var(--color-primario);
         top: 60px;
         z-index: 5;
-        transition: all 1.5s ease-in-out;
+        padding: 5px 20px 20px 20px;
     }
 
     .toggle-canals-btn {

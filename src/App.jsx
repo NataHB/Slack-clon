@@ -8,19 +8,21 @@ import NewScreen from './Screens/NewScreen/NewScreen.jsx'
 import './App.css'
 
 function App() {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState( localStorage.getItem('darkMode') === 'true' ? true : false )
+
 
     const toggleTheme = () => {
-        setDarkMode(!darkMode);
+        setDarkMode(!darkMode)
     };
 
     useEffect(() => {
+        localStorage.setItem('darkMode', darkMode)
         if (darkMode) {
-            document.body.classList.add('dark-theme');
+            document.body.classList.add('dark-theme')
         } else {
-            document.body.classList.remove('dark-theme');
+            document.body.classList.remove('dark-theme')
         }
-    }, [darkMode]);
+    }, [darkMode])
 
     return (
         <>

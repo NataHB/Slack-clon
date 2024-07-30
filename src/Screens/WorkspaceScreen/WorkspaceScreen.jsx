@@ -13,6 +13,8 @@ export const WorkspaceScreen = () => {
     const [showCanals, setShowCanals] = useState(false)
     const [indexWorkspace, setIndexWorkspace] = useState('')
     const [allCanals, setAllCanals] = useState([])
+    const [canalFiltered, setCanalFiltered] = useState([])
+    const [search, setSearch] = useState('')
 
     const { id } = useParams() 
 
@@ -20,6 +22,7 @@ export const WorkspaceScreen = () => {
     const workspace = WORKSPACES.find((workspace) => {
         return (workspace.id == id)
     })
+
     const { title, canals } = workspace
 
     const handleDisplayCanals = () => {
@@ -30,14 +33,20 @@ export const WorkspaceScreen = () => {
         WORKSPACES.map((workspace,index) => {
             if(workspace.id == id){
                 setIndexWorkspace(index)
+                setAllCanals(canals)
+                setCanalFiltered(canals)
             }
         })
     }, []
     )
 
     useEffect(() => {
-        setAllCanals(canals)
-    }, [])
+        if (search == '') {
+            setCanalFiltered([])
+        }
+        setCanalFiltered(allCanals.filter((canal) => 
+            canal.title.toLowerCase().includes(search.toLocaleLowerCase())))
+    }, [ search, allCanals ] )
 
 
     return (
@@ -53,10 +62,12 @@ export const WorkspaceScreen = () => {
         />
         <CanalList 
             title={title} 
-            canals={canals}  
+            canals={canalFiltered}  
             showCanals={showCanals}
-            allCanals={allCanals} 
-            setAllCanals={setAllCanals} 
+            search={search}
+            setSearch={setSearch}
+            allCanals={canalFiltered}
+            setAllCanals={setCanalFiltered} 
             indexWorkspace={indexWorkspace}
         />
         <CanalScreen 

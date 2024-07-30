@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-    --color-primario: #f0f0f0;
-    --color-secundario: #b8b8b8;
-    --color-terciario: #00000030;
+    --color-primario: #FDFDFD;
+    --color-secundario: #E6E6E6;
+    --color-terciario: #C9CACA;
     --color-contraste: #000000;
     --color-blanco: #fff;
     --color-button: #a3a3a3;
@@ -11,9 +11,9 @@
 }
 
 .dark-theme{
-    --color-primario: #030817;
-    --color-secundario: #050a31;
-    --color-terciario: #1525a346;
+    --color-primario: #1C1F30;
+    --color-secundario: #292C3E;
+    --color-terciario: #33394D;
     --color-contraste: #f0f0f0;
     --color-button: #f0f0f0;
     --color-negro: #030817;
@@ -26,6 +26,10 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: var(--color-contraste);
+}
+
+input{
+    color: #000000;
 }
 
 body{

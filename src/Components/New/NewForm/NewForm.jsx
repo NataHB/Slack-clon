@@ -33,7 +33,6 @@ export const NewForm = () => {
         if (newWorkspace.length > 12 || newCanal.length > 12) {
             setErrorMessage('Los campos no pueden superar los 12 caracteres')
             return 
-            
         }
         addWorkspace(newWorkspace, newCanal)
         setNewWorkspace('')

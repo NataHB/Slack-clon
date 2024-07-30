@@ -1,28 +1,29 @@
 .CanalForm {
-    border: var(--color-contraste) 1px solid;
-    border-radius: 10px;
-    background-color: var(--color-secundario);
-    padding: 3px;
+    border-radius: 25px;
+    background-color: var(--color-terciario);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
 }
 
 .CanalForm input {
     border: none;
     outline: none;
+    color: var(--color-contraste);
     font-size: 16px;
+    width: 100%;
     font-weight: 500;
-    padding: 0 3px;
-    background-color: var(--color-secundario);
+    background-color: var(--color-terciario);
 }
 
 .CanalForm button {
     border: none;
     font-size: 16px;
     font-weight: 500;
-    padding: 0 5px;
     cursor: pointer;
-    background-color: var(--color-secundario);
-}
-
-.CanalForm input::placeholder {
     color: var(--color-contraste);
+    background-color: var(--color-terciario);
 }
