@@ -41,12 +41,14 @@ export const WorkspaceScreen = () => {
     )
 
     useEffect(() => {
-        if (search == '') {
-            setCanalFiltered([])
+        if (!search.trim()) {
+            setCanalFiltered(canals);
+        } else {
+            setCanalFiltered(canals.filter((canal) =>
+                canal.title.toLowerCase().includes(search.toLowerCase())
+            ));
         }
-        setCanalFiltered(allCanals.filter((canal) => 
-            canal.title.toLowerCase().includes(search.toLocaleLowerCase())))
-    }, [ search, allCanals ] )
+    }, [search])
 
 
     return (

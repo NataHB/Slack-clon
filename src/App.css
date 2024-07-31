@@ -34,7 +34,21 @@ input{
 
 body{
     background-color: var(--color-primario);
+    overflow-y: scroll;
 }
+
+
+::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color-terciario);
+    border-radius: 25px;
+}
+
+
 
 .dark-mode-btn{
     position: absolute;

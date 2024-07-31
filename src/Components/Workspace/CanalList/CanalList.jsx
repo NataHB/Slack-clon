@@ -17,6 +17,9 @@ export const CanalList = ({ setSearch ,showCanals, canals, allCanals, setAllCana
 
     const handleSearch = () => {
         setShowSearch(!showSearch);
+        if (showSearch) {
+            setSearch('')
+        }
     }
 
     return (
@@ -49,8 +52,9 @@ export const CanalList = ({ setSearch ,showCanals, canals, allCanals, setAllCana
                         
                     </>
                 )}
-                
-                {
+                {canals.length === 0 ? (
+                    <li className='no-canals'>No existen canales</li>
+                ) : (
                     canals.map((canal, index) => {
                         const { title, id_canal } = canal
                         return (
@@ -59,6 +63,7 @@ export const CanalList = ({ setSearch ,showCanals, canals, allCanals, setAllCana
                             </NavLink>
                         )
                     })
+                )
                 }
                 {!showForm ?(
                 <button className ='CrearCanal-btn' onClick={handleForm}>

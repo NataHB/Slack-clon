@@ -30,7 +30,7 @@
 .HomeList{
     display: flex;
     flex-direction: column;
-    max-height: 400px;
+    max-height: 350px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow-y: scroll;

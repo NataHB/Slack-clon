@@ -14,7 +14,15 @@
 }
 
 .CanalScreen main::-webkit-scrollbar{
-    display: none;
+    width: 5px;
+    background: transparent;
+    border-radius: 25px;
+}
+
+.CanalScreen main::-webkit-scrollbar-thumb{
+    background: var(--color-terciario);
+    width: 5px;
+    border-radius: 25px;
 }
 
 .CanalScreen footer{
