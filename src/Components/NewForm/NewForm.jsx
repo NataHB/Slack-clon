@@ -1,5 +1,5 @@
 import React from 'react'
-import { traerLS, addWorkspaceLocalStorage } from '../../../Data/localStorage'
+import { traerLS, addWorkspaceLocalStorage } from '../../Data/localStorage'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './NewForm.css'
