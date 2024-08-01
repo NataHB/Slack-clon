@@ -33,8 +33,8 @@ export const WorkspaceScreen = () => {
         WORKSPACES.map((workspace,index) => {
             if(workspace.id == id){
                 setIndexWorkspace(index)
-                setAllCanals(canals)
-                setCanalFiltered(canals)
+                setAllCanals(allCanals)
+                setCanalFiltered(allCanals)
             }
         })
     }, []

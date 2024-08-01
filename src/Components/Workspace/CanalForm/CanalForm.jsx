@@ -20,6 +20,10 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
             setErrorMessage('El campo no pueden superar los 12 caracteres')
             return 
         }
+        if ( allCanals.find((canals) => canals.title.toLowerCase() == canal.toLowerCase())) {
+            setErrorMessage('El Canal ya existe')
+            return
+        }
         addCanal(canal)
         setCanal('')
     }

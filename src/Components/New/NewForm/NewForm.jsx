@@ -22,11 +22,11 @@ export const NewForm = () => {
             setErrorMessage('Debes rellenar ambos campos')
             return
         }
-        if (allWorkspaces.find((workspace) => workspace.title == newWorkspace)) {
+        if (allWorkspaces.find((workspace) => workspace.title.toLowerCase() == newWorkspace.toLowerCase())) {
             setErrorMessage('El Workspace ya existe')
             return 
         }
-        if (allWorkspaces.find((workspace) => workspace.canals.find((canal) => canal.title == newCanal))) {
+        if (allWorkspaces.find((workspace) => workspace.canals.find((canal) => canal.title.toLowerCase() == newCanal.toLowerCase()))) {
             setErrorMessage('El Canal ya existe')
             return
         }
