@@ -40,7 +40,7 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
                         id: 1
                     }
                 ],
-                id_canal: allCanals.length + 1
+                id_canal: Date.now()
             }
 
         setAllCanals([...allCanals, newCanalObject])
