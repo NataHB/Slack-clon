@@ -1,10 +1,9 @@
 import React from 'react'
-import { useParams, NavLink } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { traerLS } from '../../Data/localStorage.js'
 import { useEffect, useState } from 'react'
-import { WorkspaceNav } from '../../Components/index.js'
+import { WorkspaceNav, CanalList } from '../../Components/index.js'
 import { CanalScreen } from '../CanalScreen/CanalScreen.jsx'
-import { CanalList } from '../../Components/index.js'
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
 import './WorkspaceScreen.css'
 

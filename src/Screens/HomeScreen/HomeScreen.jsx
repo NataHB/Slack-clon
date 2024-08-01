@@ -1,6 +1,5 @@
 import React from 'react'
-import { HomeList } from '../../Components/index.js'
-import { HomeButton } from '../../Components/index.js'
+import { HomeList, HomeButton } from '../../Components/index.js'
 import { IoSunny, IoMoon } from "react-icons/io5";
 import './HomeScreen.css'
 

@@ -26,10 +26,6 @@ export const NewForm = () => {
             setErrorMessage('El Workspace ya existe')
             return 
         }
-        if (allWorkspaces.find((workspace) => workspace.canals.find((canal) => canal.title.toLowerCase() == newCanal.toLowerCase()))) {
-            setErrorMessage('El Canal ya existe')
-            return
-        }
         if (newWorkspace.length > 12 || newCanal.length > 12) {
             setErrorMessage('Los campos no pueden superar los 12 caracteres')
             return 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { NewForm } from '../../Components/New/NewForm/NewForm'
+import { NewForm } from '../../Components/index.js'
 import { Link } from 'react-router-dom'
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import './NewScreen.css'
