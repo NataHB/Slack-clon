@@ -21,7 +21,7 @@ export const ChatForm = ({ indexWorkspace, indexCanal, allMessages, setAllMessag
             thumbnail: '/yo.jpg',
             author: 'Tú',
             text: newMessage,
-            time: new Date().toLocaleTimeString().slice(0, 4),
+            time: new Date().toLocaleTimeString().slice(0, 5),
             id: allMessages.length + 1
         }
         
