@@ -23,8 +23,11 @@ Como se puede ver, me esmeré en que fuera un diseño agradable, funcional e int
 
 ## Resumen
 * Boceto Inicial: Utilicé Excalidraw para visualizar y planificar la estructura.
+
 * Desarrollo de la Estructura: Comencé con una estructura bien definida y la ajusté según fue necesario.
+
 * Implementación de la Lógica: Me enfoqué en crear primero la estructura visual para luego añadir funcionalidades.
+
 * Diseño y Responsive: Me aseguré de que el diseño fuera agradable y funcional, con especial atención a la adaptabilidad a diferentes dispositivos.
 
-Espero que este resumen te haya dado una buena idea del proceso que seguí para desarrollar mi clon de Slack. Ha sido un proyecto desafiante y gratificante, que me ha permitido aprender y aplicar muchos conceptos clave de Front End.
+Espero que este resumen te haya dado una buena idea del proceso que seguí para desarrollar mi clon de Slack. Fue un proyecto desafiante y gratificante, que me permitió aprender y aplicar muchos conceptos clave de Front End.
