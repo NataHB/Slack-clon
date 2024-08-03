@@ -8,12 +8,12 @@ import NewScreen from './Screens/NewScreen/NewScreen.jsx'
 import './App.css'
 
 function App() {
-    const [darkMode, setDarkMode] = useState( localStorage.getItem('darkMode') === 'true' ? true : false )
 
+    const [darkMode, setDarkMode] = useState( localStorage.getItem('darkMode') === 'true' ? true : false )
 
     const toggleTheme = () => {
         setDarkMode(!darkMode)
-    };
+    }
 
     useEffect(() => {
         localStorage.setItem('darkMode', darkMode)

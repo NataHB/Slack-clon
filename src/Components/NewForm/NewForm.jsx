@@ -8,12 +8,10 @@ export const NewForm = () => {
 
     const workspaces = traerLS()
 
-
     const [allWorkspaces, setAllWorkspaces] = useState(workspaces)
     const [newWorkspace, setNewWorkspace] = useState([])
     const [newCanal, setNewCanal] = useState([])
     const [errorMessage, setErrorMessage] = useState('')
-
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -60,8 +58,6 @@ export const NewForm = () => {
         setAllWorkspaces([...allWorkspaces, newWorkspaceObject])
         addWorkspaceLocalStorage(newWorkspaceObject)
     }
-    
-    
 
     return (
         <>
@@ -82,13 +78,12 @@ export const NewForm = () => {
                     />
 
                 <div className='form-btns'>
-                <button type="submit">Crear</button>
-                <Link to={'/'}>
-                <button>Cancelar</button>
-                </Link>
+                    <button type="submit">Crear</button>
+                    <Link to={'/'}>
+                        <button>Cancelar</button>
+                    </Link>
                 </div>
             </form>
-            
         </>       
     )
 }

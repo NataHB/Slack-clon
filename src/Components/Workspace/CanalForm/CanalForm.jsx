@@ -47,7 +47,6 @@ export const CanalForm = ({allCanals, setAllCanals, indexWorkspace}) => {
         addCanalLocalStorage(indexWorkspace, newCanalObject)
     }
 
-
     return (
         <>
             <form className="CanalForm" onSubmit={handleSubmit}>

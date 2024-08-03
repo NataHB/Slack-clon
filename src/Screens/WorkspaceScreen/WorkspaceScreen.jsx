@@ -18,6 +18,7 @@ export const WorkspaceScreen = () => {
     const { id } = useParams() 
 
     const WORKSPACES = traerLS()
+    
     const workspace = WORKSPACES.find((workspace) => {
         return (workspace.id == id)
     })

@@ -8,15 +8,15 @@ import './CanalList.css'
 export const CanalList = ({ setSearch ,showCanals, canals, allCanals, setAllCanals, indexWorkspace }) => {
 
     const { id } = useParams()
-    const [showForm, setShowForm] = useState(false);
-    const [showSearch, setShowSearch] = useState(false);
+    const [showForm, setShowForm] = useState(false)
+    const [showSearch, setShowSearch] = useState(false)
 
     const handleForm = () => {
-        setShowForm(!showForm);
+        setShowForm(!showForm)
     }
 
     const handleSearch = () => {
-        setShowSearch(!showSearch);
+        setShowSearch(!showSearch)
         if (showSearch) {
             setSearch('')
         }
@@ -76,8 +76,6 @@ export const CanalList = ({ setSearch ,showCanals, canals, allCanals, setAllCana
                         <button className='CancelarCanal-btn' onClick={handleForm}>Cancelar</button>
                     </>
                 )}
-                
-    
             </ul>
         </nav>
     )
